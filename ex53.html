@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>changing the contents of a window</title>
+	<script type="text/javascript">
+		
+		function show(){
+			var nw=window.open("newwindow","","width=300", height="300");
+			nw.document.write("<!DOCTYPE html>");
+			nw.document.write("<html>");
+						nw.document.write("<head>");
+				nw.document.write("<meta charset="utf-8">");
+				nw.document.write("<title>");
+				nw.document.write("</title>);                                                                                                                                                                              
+			nw.document.write("</head>);                                                                                                           
+			nw.document.write("<body>");
+			nw.document.write("<p> displaying webpage in window");
+			nw.document.write("</p>");
+			nw.document.write("</body>");
+			nw.document.write("</html>");
+
+			
+		}
+	</script>
+</head>
+<body>
+ <input type="button" onclick="show()" value="new window" >
+</body>
+</html>

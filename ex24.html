@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>factorial using function</title>
+	<script type="text/javascript">
+		function factorial(n){
+			var ans=1;
+			if(n==0 || n==1)
+			{
+				return ans;
+			}
+			
+			else{
+				for(var i=n;i>=1;i--){
+					ans=ans*i;
+				}
+				return ans;
+			}
+		}
+		var n=5;
+		var res=factorial(n);
+		document.write("the factorial of"=+n +"is"+ res);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

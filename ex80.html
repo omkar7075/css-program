@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> </title>
+	<script type="text/javascript">
+		function getpage(ch) {
+			var pg=ch.option[ch.selectedIndex].value;
+			if (pg=!"") {
+				window.location=pg;
+			} 
+		}
+	</script>
+</head>
+<body>
+  <form name="frm1">
+  	<select name="menu" onchange="getpage(this)">
+  		<option value="file:///C:/Users/Admin/Documents/IMP%20FILES/css_program/ex3.html">wpd</option>
+  		<option value="file:///C:/Users/Admin/Documents/IMP%20FILES/css_program/ex1.html">css</option>
+  		<option value="file:///C:/Users/Admin/Documents/IMP%20FILES/css_program/ex2.html">gad</option>
+  	</select>
+  
+  </form>
+</body>
+</html>

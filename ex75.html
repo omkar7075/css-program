@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> </title>
+	<script type="text/javascript">
+		var stsbarmsg="welcome to javascript";
+		function scrollstatusmsg(){
+			window.status=stsbarmsg;
+			stsbarmsg=stsbarmsg.substring(1,stsbarmsg.length)+stsbarmsg.substring(0,1);
+			setTimeout("scrollstatusmsg()",150);
+		}
+	</script>
+</head>
+<body onload="scrollstatusmsg()">
+
+</body>
+</html>

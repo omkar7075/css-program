@@ -1,0 +1,31 @@
+
+// write program to sort element of array in ascending and descemding order<br>
+
+<html>
+<head>
+	<script type="text/javascript">
+		var a=[4,3,1,2];
+		document.write("array elements before sorting are"+a+"<br>");
+		a.sort();
+		
+		document.write("array elements after sorting are"+a+"<br>");
+		var d=[13,20,5,2];
+
+		document.write("array elements are"+d+"<br>");
+		d.sort(function (a,b) {
+			// body..
+			return a-b
+		});
+
+		
+		document.write("array elements in ascending order"+d+"<br>");
+		var rev=d.reverse();
+		document.write("array elements in descending order"+rev+"<br>");
+
+
+
+	</script>
+</head>
+<body> 
+</body>
+</html>

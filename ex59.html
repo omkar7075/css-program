@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> regexp exec1() method </title>
+</head>
+<body>
+<script type="text/javascript">
+	function checking() {
+	var re=/client/;
+	var str=document.getElementId("txt1").value;
+	if (re.exec(str)) {
+		alert("the string "+str" contain character abc");
+	}
+	else{
+		alert("the string"+str"contain character other than abc");
+	}
+}
+
+</script>
+
+<h2>program to check the use of exec method 1 </h2>
+
+enter string<input type="text" id="txt1" name="">
+<input type="button" onclick="checking()" value="check" name="">
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+
+
+	//prime number
+	const lower number=parseInt(prompt("enter lower number="));
+	const higher number=parseInt(prompt("enter higher number="));
+
+	console.log("the prime number between ${lower number} and ${higher number} are:");
+	
+	for(let i=lower number; i<=higher number;i++)
+	{
+		let flag=0;
+	
+	for(let j=2;j<=i;j++)
+	{
+		if(i%j==0)
+		{
+			flag=1;
+			braek;
+		}
+	}
+	
+	if(i>1 && flag==0)
+	{
+		console.log(i);
+	}
+}
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		function changeevent(val) {
+			// body...
+			document.write("the input value has been changed, the new value is"+val);
+		}
+	</script>
+</head>
+<body>
+<form>
+	<label> enter your name</label>
+	<input type="text" id="txt1" value="welcome" onchange="changeevent(this.val)" name="">
+	<label>enter your class</label>
+	<input type="text" id="txt2" name="">
+</form>
+</body>
+</html> 

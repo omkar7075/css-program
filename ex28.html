@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title></title>
+	<script type="text/javascript">
+		
+		function message() {
+			// body...
+			with(document.forms.frm1)
+			{
+				alert("your name is="+elements[0].value+elements[1].value);
+			}
+		}
+	</script>
+</head>
+<body>
+<form name="frm1">
+	enter your firstname<input type="text" name="fname">
+	enter your lastname<input type="text" name="lname">
+	enter your age<input type="text" name="age">
+	<input type="button" name="btn1" value="display" onclick="message()">
+</form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> </title>
+	<script type="text/javascript">
+		function display() {
+			// body...
+			var i,sum=" ";
+			form=document.getElementById("frm1");
+			panel=document.getElementById("p1");
+			for (var i = 0.; i <form.fruits.length; i++) {
+				if(form.fruits[i].checked)
+					sum+=form.fruits[i].value+" ";
+
+			}
+			panel.innerHTML+="you selected "+sum;
+			if(document.getElementById("red").checked)
+				p2.innerHTML+="YOU HAVE SELECTED THE COLOR:"+document.getElementById("red").value;
+
+				else if(document.getElementById("blue").checked)
+				p2.innerHTML+="YOU HAVE SELECTED THE COLOR:"+document.getElementById("blue").value;
+
+				else(document.getElementById("pink").checked)
+				p2.innerHTML+="YOU HAVE SELECTED THE COLOR:"+document.getElementById("pink").value;
+		}
+	</script>
+</head>
+<body>
+     <form id="frm1">
+     	favourate color?
+     	<input type="radio" name="color" id="red">red<br>
+
+     	<input type="radio" name="color" id="blue">blue<br>
+     	
+     	<input type="radio" name="color" id="pink">pink<br>
+     	
+          favourite fruits?
+     	<input type="checkbox" name="fruits" id="a" value="apple">apple<br>
+     	<input type="checkbox" name="fruits" id="b" value="banana">banana<br>
+     	<input type="checkbox" name="fruits" id="m" value="mango">mango<br>
+     	<input type="button"  value="select" onclick="display()" name="">
+     
+     </form>
+</body>
+</html>

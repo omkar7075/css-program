@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> ex47-window blur and focus</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		.wf{
+			font-size: 40px;
+			font-weight: bold;
+			color: lightcoral;
+		}
+		h2{
+			color:greenyellow;
+		}
+	</style>
+</head>
+<body>
+<h2>
+	window blur and focus
+</h2>
+<div class="wf"> window function </div>
+<script type="text/javascript">
+	var window;
+	function windowopen(){
+		
+		window=window.open("https://pcpolytechnic.com/_blank, width=600, height=300");
+
+	}
+
+	function windowclose(){
+		window.close();
+	}
+
+	function windowblur(){
+		window.blur();
+	}
+	
+	function windowfocus(){
+		window.focus();
+	}
+	
+</script>
+<button onclick="windowopen()"> open pcpcollage website </button>
+
+<button onclick="windowblur()"> blur pcpcollage website </button>
+
+<button onclick="windowofocus()"> focus pcpcollage website </button>
+
+<button onclick="windowclose()"> open pcpcollage website </button>
+
+</body>
+</html>

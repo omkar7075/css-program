@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> ex44-readonly elements</title>
+	<script type="text/javascript">
+		function readfun(){
+			document.getElementById('t1').readOnly=true;
+		}
+
+		function writefun(){
+			document.getElementById('t1').readOnly=false;
+		}
+		
+	</script>
+</head>
+<body>
+<h1> readonly elements</h1>
+<form name="myform">
+	username:<input type="text" id="t1" name="name"/>
+	<br> <br>
+	<input type="button" value="Read-Only" onclick="readfun()"/><br>
+	<br>
+	<input type="button" value="write" onclick="writefun()"/>
+</form>
+</body>
+</html>

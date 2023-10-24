@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> </title>
+<script type="text/javascript">
+	function display1() {
+		// body...
+		document.image.src="file:///C:/Users/Admin/Pictures/Saved%20Pictures/C/gym.jpg"
+		document.getElementById('p1').innerHTML="image 1 is change 1 to 2"
+	}
+
+	function display2() {
+		// body...
+		document.image.src="file:///C:/Users/Admin/Pictures/Saved%20Pictures/C/blue-5457731_960_720.webp"
+		document.getElementById('p1').innerHTML="image 2 is change 2 to 1"
+	}
+	function display3() {
+		// body...
+		document.image.src="file:///C:/Users/Admin/Pictures/Saved%20Pictures/C/responsive.jpg"
+		document.getElementById('p1').innerHTML="image 3 is change 1 to 3"
+	}
+</script>
+</head>
+<body>
+    <h2> image rollover</h2>
+    <a onmouseover="display1()"> <h2> image1 </h2> </a>
+    <a onmouseout="display2()"> <h2> image2 </h2> </a>
+    <a onclick="display3()"> <h2> image3 </h2> </a>
+    
+
+
+
+ <img src="file:///C:/Users/Admin/Pictures/Saved%20Pictures/C/gym.jpg" name="image"   width="100px" height="200px">
+ <p id="p1" > image is change 1 to 2</p>
+</body>
+</html>

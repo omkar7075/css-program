@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> ex48-changing the content of whole window </title>
+	<script type="text/javascript">
+        function changecontent(){
+        	document.getElementById("para").innerHTML="after cliking the button:new content";
+
+        }
+	 </script>
+</head>
+<body>
+<h1> changing the content only of paragraph window </h1>
+<p> click to change the whole window </p>
+<input type="button" value="changecontent" onclick="changecontent()"/>
+<h3> <p id="para">before clicking the button:old content</p></h3>
+</body>
+</html>

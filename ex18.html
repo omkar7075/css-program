@@ -1,0 +1,43 @@
+
+//program to demonstrate creating an array using new keyword and applying splice and slice method on array
+
+<html>
+<head>
+	<script type="text/javascript">
+		var a=new Array(9,5,3,1);
+		document.write("array elements are "+a+"<br>");
+		document.write("<br>")
+		document.write("length of the array"+a.length+"<br>");
+		document.write("<br>")
+		
+		document.write(a.splice(1,0,7)+"<br>");
+		document.write("<br>")
+		document.write("array elements after splice(1,0,7) are="+a+"<br>");
+		document.write("<br>")
+		
+		document.write(a.splice(1,0,40,60)+"<br>");
+		document.write("<br>")
+		document.write("array elements after splice(1,0,40,60) are="+a+"<br>");
+		document.write("<br>")
+		
+		document.write(a.splice(3,2,70)+"<br>");document.write("<br>")
+		document.write("array elements after splice(3,2,70) are="+a+"<br>");
+		document.write("<br>")
+
+		document.write(a.splice(3,2)+"<br>");
+		document.write("<br>")
+		document.write("array elements after splice(3,2) are="+a+"<br>");
+		document.write("<br>")
+
+		var n=[10,20,30,40,50,60,70,80,90];
+		document.write("array elements are="+n+"<br>");
+             document.write("<br>")
+		document.write("after the splice(5) operation"+n.slice(5)+"<br>");
+		document.write("<br>")
+		document.write("after the splice(3,6) operation"+n.slice(3,6)+"<br>");
+		document.write("<br>")
+	</script>
+</head>
+<body> 
+</body>
+</html>

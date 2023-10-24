@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> </title>
+	<script type="text/javascript">
+		function getselecteditem() {
+			var ele=document.getElementById("menu");
+			var str=ele.options[ele.selectedIndex].value;
+			alert("the selected value is:"+str);
+		}
+	</script>
+</head>
+<body>
+  <form name="frm1">
+  	<select id="menu">
+  		<option value="wpd">wpd</option>
+  		<option value="css">css</option>
+  		<option value="gad">gad</option>
+  	</select>
+  	<input type="button" value="selection" onclick="getselecteditem()">
+  </form>
+</body>
+</html>

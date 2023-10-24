@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> ex41-evaluting checkbox </title>
+	<script type="text/javascript">
+		function selection() {
+			// body...
+			var x="you selected"+" "
+                 with(document.forms.myform){
+                 	if(a.checked==true)
+                 		x+=a.value+" ";
+
+                 	if(b.checked==true)
+                 		x+=b.value+" ";
+                 	
+                 	if(o.checked==true)
+                 		x+=o.value+" ";
+                 	
+                 	if(p.checked==true)
+                 		x+=p.value+" ";
+                 	
+                 	if(g.checked==true)
+                 		x+=g.value+" ";
+                 	
+                 	
+                 	
+                 }		
+                 document.write(x);	
+                 		}
+	</script>
+</head>
+<body>
+<h1>evaluating checkbox selections</h1>
+<form name="myform">
+	select your favourite fruits:<br>
+	
+	<input type="checkbox" name="a" value="apple">apple
+
+	<input type="checkbox" name="b" value="banana">banana
+
+	<input type="checkbox" name="o" value="orange">orange
+    
+    <input type="checkbox" name="a" value="pear">pear
+
+    <input type="checkbox" name="a" value="grapes">grapes
+
+    <input type=reset value="show" onclick="selection()">
+</form>
+</body>
+</html>

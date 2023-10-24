@@ -1,0 +1,33 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+
+
+	//factorial
+	function factorial(n){
+
+		if (n==0 ) {
+			return 1;
+		}
+
+		else{
+			return n*factorial(n-1);
+		}
+	}
+	const num=prompt("enter number=");
+	if (num>=0){
+		const result=factorial(num);
+		document.write("factorial="+num);
+		document.write("</br>")
+	    document.write("result="+result);
+
+	}
+	else{
+		document.write("enter number");
+	}
+	
+</script>
+</body>
+
+</html>

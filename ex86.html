@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>reading the cookie</title>
+	<script type="text/javascript">
+		function readcookie(){
+			var allcookies=document.cookie;
+			document.cookies="username=omkar";
+			document.write("allcookies:"+allcookies);
+			cookieArray=allcookies.split(';');
+			for (var i=0;i<cookieArray.length;i++){
+				name=cookieArray[i].split('=')[0];
+				value=cookieArray[i].split('=')[1];
+				document.write("key is:"+name+"and value:"+value);
+			}
+
+		}
+	</script>
+</head>
+<body>
+<form name="myform" action=" ">
+	<p>click the following button & see the result:</p>
+	<input type="button" value="GetCookie" onclick="readcookie()" name="">
+</form>
+</body>
+</html>

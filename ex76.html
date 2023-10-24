@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> banners </title>
+	<script type="text/javascript">
+		banners=new Array('file:///C:/Users/Admin/Pictures/Saved%20Pictures/C/gym.jpg','file:///C:/Users/Admin/Pictures/Saved%20Pictures/C/blue-5457731_960_720.webp');
+		count=0;
+		function rotates(){
+			if(document.images){
+				count++;
+                  if(count==banners.length){
+                  	count=0;
+                  }
+                  document.img1.src=banners[count];
+                  settimeout("rotates()",10);
+			}
+		}
+	</script>
+</head>
+<body onload="rotates()">
+	<center>
+		<img src="file:///C:/Users/Admin/Pictures/Saved%20Pictures/C/responsive.jpg" width="400" height="300" name="img1">
+	</center>
+
+</body>
+</html>

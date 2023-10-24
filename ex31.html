@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		function mouseover() {
+			// body...
+			document.frm1.b1.value="mouseover";
+		}
+          
+          function mouseout() {
+			// body...
+			document.frm1.b1.value="mouseout";
+		}
+
+	</script>
+</head>
+<body>
+<form name="frm1">
+	<input type="text" name="t1" onmouseover="mouseover()" onmouseout="mouseout()">
+	<input type="button" name="b1" value="click">
+</form>
+</body>
+</html>

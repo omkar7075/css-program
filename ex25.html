@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>palindrome in function</title>
+	<script type="text/javascript">
+		function chkpal(a){
+			var arrv=a.toString().split("");
+			var rev=arrv.reverse().join("");
+			document.write("reverse  of="+a   +"is"+ rev+"<br>");
+
+			if(a==rev){
+				document.write("palindrome");
+			}
+			else{
+				document.write("not a palindrome");
+			}
+		}
+
+		var n=prompt("enter a value");
+		chkpal(n);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

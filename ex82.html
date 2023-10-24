@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>  validate menu</title>
+	<script type="text/javascript">
+		function validatemenu() {
+			// body...
+			var sel=document.getElementById("sub").value;
+               if (sel=="selected subject") {
+               	window.alert("please select subject");
+               }
+               else{
+               	document.getElementById("p1").innerHTML="you have selected subject as:"+sel;
+               }
+		}
+	</script>
+	<style type="text/css">
+		body{
+			width: 5000px;
+			height: 5000px;
+		}
+	</style>
+</head>
+<body>
+<select  id="sub" style="position: fixed;">
+	<option  value="select subject"> select subject </option>
+		<option value="c">C</option>
+		<option value="C++">C++</option>
+		<option value="JAVA">JAVA</option>
+		<option value="VB.NET">VB.NET</option>
+	
+</select><br>
+<br><input type="button" value="validate" onclick="validatemenu()" style="position: fixed;" name=""><br>
+<p id="p1">this is a validate the menu</p>
+</body>
+</html>

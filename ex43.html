@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> ex43-disbaling elements</title>
+	<script type="text/javascript">
+		function enablefunction() {
+			// body...
+			document.forms.myform.name.disabled=false
+		}
+
+		function disablefunction() {
+			// body...
+			document.forms.myform.name.disabled=true
+		}
+	</script>
+</head>
+<body>
+<h1> disbaling elements</h1>
+<form name="myform"><br>
+	<div> username:<input type="text" name="name">
+  </div><br>
+   <div>
+  	<input type="button" value="Enable" onclick="enablefunction()"/><br>
+  	<input type="button" value="Disable" onclick="disablefunction()"/><br>
+  </div>
+</form>
+</body>
+</html>

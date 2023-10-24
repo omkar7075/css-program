@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> </title>
+
+<script type="text/javascript">
+	function change() {
+		// body...
+		
+		window.toppage.document.open();
+		window.toppage.document.write('<html>');
+        window.toppage.document.write('<body>');
+        window.toppage.document.write('<input type="text" name="txt1">');
+        window.toppage.document.write('<input type="button" name="btn1" value="webpage">');
+        window.toppage.document.write('</body>');
+          window.toppage.document.write('</html>');
+          window.toppage.document.close();
+		
+		
+	}
+</script>
+</head>
+
+<frameset rows="56%,50%" onload="change()">
+<frame name="toppage"> </frame>
+<frame src="ex69frm1.html" name="bottompage"></frame>
+</frameset>
+</html>
